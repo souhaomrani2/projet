@@ -11,7 +11,7 @@ pipeline {
         stage('Test GitHub Connection') {
             steps {
                 script {
-                    def gitUrl = 'https://github.com/souhaomrani/mon_Projet.git'
+                    def gitUrl = 'https://github.com/souhaomrani2/projet.git'
                     // Checkout the GitHub repository using configured credentials
                     checkout([$class: 'GitSCM',
                               branches: [[name: '*/main']],

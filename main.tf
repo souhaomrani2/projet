@@ -17,7 +17,7 @@ provider "proxmox" {
 resource "proxmox_vm_qemu" "ubuntu_vmm" {
   name        = "ubuntu-vmm"
   clone       = var.template
-  target_node = "pve"
+  target_node   = "pve"
 }
 
   
